@@ -13,7 +13,7 @@ destination: ../travis/
 # Branch defaults to "source" for USERNAME.github.io
 # or "master" otherwise
 username: dharmesh1010
-repo: https://github.com/dharmesh1010/travis-dharmesh.git
+repo: travis-dharmesh
 branch: master
 
 permalink: pretty
