@@ -12,9 +12,9 @@ destination: ../EXAMPLE/
 # repo defaults to USERNAME.github.io
 # Branch defaults to "source" for USERNAME.github.io
 # or "master" otherwise
-username: EXAMPLE
-repo: EXAMPLE
-branch: source
+username: dharmesh1010
+repo: https://github.com/dharmesh1010/travis-dharmesh.git
+branch: master
 
 permalink: pretty
 
