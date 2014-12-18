@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <title>Reference Management</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Martin Fenner" />
+    <meta name="author" content="Kaja Scheliga" />
+    <meta name="author" content="Sönke Bartling" />
+    <meta name="keywords" content="persistent identifiers" />
+
+    <!-- RDFa Metadata (in DublinCore) -->
+    <meta property="dc:title" content="Reference Management" />
+    <meta property="dc:creator" content="Martin Fenner" />
+    <meta property="dc:creator" content="Kaja Scheliga" />
+    <meta property="dc:creator" content="Sönke Bartling" />
+    <meta property="dc:format" content="text/html" />
+    <meta property="dc:language" content="en" />
+    <meta property="dc:identifier" content="/tools/reference_management.html" />
+    <meta property="dc:rights" content="CC-BY-NC" />
+    <meta property="dc:source" content="Opening Science" />
+    <meta property="dc:subject" content="Scholarly Communication" />
+    <meta property="dc:type" content="website" />
+
+    <!-- Google Scholar Metadata -->
+    <meta name="citation_author" content="Martin Fenner"/>
+    <meta name="citation_author" content="Kaja Scheliga"/>
+    <meta name="citation_author" content="Sönke Bartling"/>
+    <meta name="citation_title" content="Reference Management"/>
+    <meta name="citation_journal_title" content="Opening Science"/>
+
+    <link rel="alternate" type="application/rss+xml" title="Opening Science" href="/rss.xml" />
+    <link rel="alternate" type="application/atom+xml" title="Opening Science" href="/atom.xml" />
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/app-90174b04f571833875511d8c4181b385.css">
+    <link rel="stylesheet" href="/assets/jasny-bootstrap.min-858066d22662d38bbc0ba337e5dfdfbb.css">
+    <link rel="stylesheet" href="/assets/navmenu-push-9a65531d989d060d6e1c9046851a6a91.css">
+    <link rel="stylesheet" href="/assets/fluidbox-1e4d75d5984979bafa6c14619443b4d2.css">
+
+    <!-- d3.js -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.2/d3.min.js"></script>
+
+    <!-- Adobe Web Fonts -->
+    <script src="//use.edgefonts.net/rosario.js"></script>
+  </head>
+
+
+  <body>
+    <nav id="navmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas" role="navigation">
+  <a class="navmenu-brand" href="#">Opening Science - The Book</a>
+  <ul class="nav navmenu-nav">
+  
+    <li><span class="glyphicon glyphicon-folder-open"></span> Tools</li>
+  
+  
+    <li><span class="glyphicon glyphicon-calendar"></span> 4 March 2014</li>
+  
+  
+    <li><span class="glyphicon glyphicon-link"></span> <a href="http://dx.doi.org/10.1007/978-3-319-00026-8_8">doi: 10.1007/978-3-319-00026-8_8</a></li>
+  
+    <li><span class="glyphicon glyphicon-time"></span> <a href="http://github.com/openingscience/book/commits/master/_posts/2013-08-08-reference_management.md">Version History</a></li>
+    <li><span class="glyphicon glyphicon-edit"></span> <a href="http://prose.io/#openingscience/book/edit/master/_posts/2013-08-08-reference_management.md">Send Edit Request</a></li>
+    
+    <li><span class="glyphicon glyphicon-tags"></span> Tags
+      <ul class="tag-list">
+        
+        
+  
+  	<li><a href="/tags.html#persistent identifiers-ref">persistent identifiers</a></li>
+  
+
+
+
+      </ul>
+    </li>
+    
+    <li><span class="glyphicon glyphicon-home"></span> <a href="/">Home</a></li>
+    <li><span class="glyphicon glyphicon-info-sign"></span> <a href="/about.html">About</a></li>
+    <li><span class="glyphicon glyphicon-tags"></span> <a href="/tags.html">All Tags</a></li>
+    <li><a href="http://creativecommons.org/licenses/by-nc/3.0/deed.en" class="logo"><img src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png"></a></li>
+  </ul>
+</nav>
+
+    <div class="navbar navbar-default navbar-fixed-top">
+      <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#navmenu" data-canvas="body">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="container">
+      <a href="https://github.com/openingscience/book"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://github-camo.global.ssl.fastly.net/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="page-header">
+            <h1>Reference Management</h1>
+            <p>Martin Fenner, Kaja Scheliga & Sönke Bartling</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<h2>Abstract</h2>
+  <p>Citations of relevant works are an integral part of all scholarly papers. Collecting, reading, and integrating these references into a manuscript is a time-consuming process, and reference managers have facilitated this process for more than 25 years. In the past 5 years, we have seen the arrival of a large number of new tools with greatly expanded functionality. Most of the newer reference managers focus on the collaborative aspects of collecting references and writing manuscripts. A number of these newer tools are web-based in order to facilitate this collaboration, and some of them are also available for mobile devices. Many reference managers now have integrated PDF viewers (sometimes with annotation tools) for scholarly papers. Reference managers increasingly have to handle other forms of scholarly content, from presentation slides to blog posts and web links. Open source software and open standards play a growing role in reference management. This chapter gives an overview of important trends in reference management and describes the most popular tools.</p>
+<div class="references">
+
+</div>
+
+<blockquote>
+<p>If I have seen further it is by standing on the shoulders of Giants. <small>Isaac Newton</small></p>
+</blockquote>
+<h2 id="introduction">Introduction</h2>
+<p>Reference Management is perceived to be tedious and time consuming by many researchers, especially when it is done manually. In the past, references used to be written on index cards and stored in boxes. Reference management software allows for the digitalization of a personal collection of relevant scholarly publications. The earliest programs to manage the basic task of storing references and adding them to manuscripts have been around for over 25 years (including Endnote and BibTeX/LaTeX-based programs still popular today), but each individual entry had to be typed in by hand. In the last 15 years we have seen a number of significant developments that have made reference management much easier for the researcher:</p>
+<ol type="1">
+<li>Retrieval of reference information from online bibliographic databases</li>
+<li>DOIs and other persistent identifiers for bibliographic information</li>
+<li>Automated management of PDF files</li>
+<li>Open Access for easier access to full-text content</li>
+<li>Web-based reference management for easier collaboration and use across multiple devices</li>
+</ol>
+<p>In this chapter we describe what reference managers are and provide an overview of some reference management products. We do not make recommendations as to which reference manager may be the best as this is a personal choice and depends upon the workflow of the individual researcher.</p>
+<h2 id="what-is-a-reference-manager">What is a Reference Manager?</h2>
+<p>A reference manager supports researchers in performing three basic research steps: searching, storing, and writing <span class="citation" data-cites="fenner_2010a">(M. H. Fenner 2010)</span>. It helps researchers find relevant literature, allows them to store papers and their bibliographic metadata in a personal database for later retrieval, and allows researchers to insert citations and references in a chosen citation style when writing a text. To support those steps, a reference manager should have the following functionalities as identified by Gilmour and Cobus-Kuo <span class="citation" data-cites="gilmour_2011">(2011)</span>:</p>
+<ol type="1">
+<li>Import citations from bibliographic databases and websites</li>
+<li>Gather metadata from PDF files</li>
+<li>Allow organization of citations within the reference manager database</li>
+<li>Allow annotation of citations</li>
+<li>Allow sharing of the reference manager database or portions thereof with colleagues</li>
+<li>Allow data interchange with other reference manager products through standard metadata formats (e.g. RIS, BibTeX)</li>
+<li>Produce formatted citations in a variety of styles</li>
+<li>Work with word processing software to facilitate in-text citation</li>
+</ol>
+<p>A reference manager is a software package that allows scientific authors to collect, organize, and use bibliographic references or citations. The terms citation manager or bibliographic management software are used interchangeably. The software package usually consists of a database that stores references and citations. Once a citation is inserted into the database, it can be reused to create bibliographies which are typically found at the end of a scientific text.</p>
+<p>Almost all reference managers allow direct importing from bibliographic databases through direct access from the reference manager and/or bookmarklets that import content from the web browser. Alternatively, references can be imported from other reference managers or from files in the BibTeX standard format with the help of import tools.</p>
+<p>The reference database can then be searched, indexed, and labeled. Most reference managers offer tools for organizing the references into folders and subfolders. Some reference managers allow the inclusion of full-text papers in PDF format. References can be shared via the internet and organized into workgroups so that all members can use the same reference database.</p>
+<p>Reference managers offer tools for exporting citations and references into word processing programs by selecting relevant items from the database. The citation style can be selected from a corresponding database which contains styles that aim to cover the requirements of a large number of scholarly publishers. Some reference managers allow for styles to be edited and saved.</p>
+<p>There is a wide variety of reference management software, and the strengths and weaknesses of reference management software are perceived differently depending on the workflows of individual scientists. The deciding factor for a particular reference manager is often its popularity within a particular community, as collaboratively writing a manuscript is facilitated if all authors use the same reference manager (see case 24, Bartling: How this book was created using collaborative authoring and cloud tools). Reference managers have been commercially available for a long time, but free solutions offer comparable functionalities and are increasingly gaining importance.</p>
+<p>Some reference managers allow the sharing, collaborative editing, and synchronization of reference databases across a private workgroup and/or publicly via the internet. The public sharing of references is the focus of online-only social bookmarking tools such as CiteULike and Bibsonomy, but is also available with other reference managers. This functionality makes it possible to share open access papers online (see chapter 09, Sitek et al: Open Access: A State of the Art) and to generate usage statistics as a novel means of measuring scientific impact (see chapter 12, Fenner et al: Altmetrics and Other Novel Measures for Scientific Impact).</p>
+<h2 id="getting-references-into-the-reference-manager">Getting References into the Reference Manager</h2>
+<p>All reference managers provide the functionality to manually enter bibliographic data. However, it is more convenient if the references are automatically extracted from an online bibliographic database such as Web of Science, Scopus, PubMed, or Google Scholar. Most reference managers can also import references directly from a webpage, usually using information embedded via CoinS. All reference managers can import/export references in the BibTeX and/or RIS format; this is a convenient way to share reference lists with colleagues.</p>
+<h3 id="bibliographic-databases">Bibliographic Databases</h3>
+<p>Some of the largest bibliographic databases (Web of Science, Scopus, and others) are only available via a subscription. In the last 10 years we have seen the emergence of an increasing number of openly available bibliographic databases. This trend started with PubMed in the late 1990s, includes Google Scholar, and, more recently, Microsoft Academic Search and the CrossRef Metadata Search, and now also includes bibliographic databases built by reference managers themselves (e.g. Mendeley or CiteULike). The availability of these databases increases the options for researchers to automatically import citation information, either via direct integration into the reference manager, or via bookmarklet that captures the bibliographic content on the web page.</p>
+<h3 id="coins-hassle-free-import-of-bibliographic-data">COinS: Hassle Free Import of Bibliographic Data</h3>
+<p>COinS (ContextObjects in Spans) is a method that includes relevant bibliographic metadata of a scientific publication into the HTML code of a web page. If appropriate plugins are installed in a standard web browser, the bibliographic information of a reference can be easily retrieved by a reference manager, thus omitting tedious copy and paste processes. For example, if a reference is found in PubMed, a little symbol appears in the browser address line if the Zotero plugin is installed. At the click of a button, all important bibliographic information will be transferred into the Zotero database. Many scientific databases, scientific social networks, and journals support COinS.</p>
+<figure><a href=""><img src="/images/reference_management_coins.jpg" alt="Figure 1. Showing COinS in action. At the click of a button, a reference is included into the reference manager software (Zotero) from information that is contained in the COinS information in the displayed web page: No need to manually copy references."></a><figcaption><strong>Figure 1</strong>. Showing COinS in action. At the click of a button, a reference is included into the reference manager software (Zotero) from information that is contained in the COinS information in the displayed web page: No need to manually copy references.</figcaption></figure><h3 id="digital-object-identifiers-dois-and-other-unique-identifiers">Digital Object Identifiers (DOIs) and other Unique Identifiers</h3>
+<p>Most journal articles can now be uniquely identified by a digital object identifier (DOI). DOIs for journal articles are issued by CrossRef, a non-profit organization that has most scholarly publishers as its members. DOIs can also be used for other content, e.g. conference proceedings or book chapters. DataCite is another non-profit organization that can issue DOIs, focusing on DOIs for datasets. There are also other unique identifiers for scholarly content, e.g. the PubMed ID, PubMed Central ID, or the ArXiV ID. These identifiers make it much easier to handle bibliographic information: reference managers can extract the DOI from imported PDFs, obtain more citation information using the DOI, store the DOI internally to help find duplicate records, etc. Authors only need to worry about the DOI (or other unique identifier), all the other information they need (authors, title, journal, link to the full-text) can be obtained from it.</p>
+<h3 id="standardized-bibliographic-data-formats-bibtex-and-ris">Standardized Bibliographic Data Formats: BibTeX and RIS</h3>
+<p>BibTeX and RIS are the two most established file formats for storing bibliographic data, and one or both of these formats are supported by all reference managers. Exporting data in a standardized format is important because it allows users to backup their reference lists independently of the reference management software, to switch from one reference manager to another, or to use multiple reference managers in parallel.</p>
+<ul>
+<li>
+<strong>BibTeX</strong> has existed since the mid ‘80s and was designed to be used in combination with the typesetting system LaTeX. The format is now widely supported by reference managers that work with Microsoft Word and other authoring tools, and by online bibliographic databases such as Google Scholar.</li>
+<li>
+<strong>RIS</strong> (Research Information Systems) is standardized tag format originally invented by Research Information Systems (now part of Thomson Reuters). The format is widely supported and has been adapted over time, e.g. to include a field for digital object identifiers (DOIs).</li>
+<li>
+<strong>Endnote XML and Citeproc JSON</strong> are newer formats which are not yet as widely supported. BibTeX and RIS are plain text formats. XML and, more recently, JSON have evolved into the standard data exchange formats of the Web, and are easier to process automatically. They may therefore over time become the predominant formats for exchanging bibliographic information.</li>
+</ul>
+<h2 id="citation-styles-and-csl-citation-style-language">Citation styles and CSL (Citation Style Language)</h2>
+<p>Citations can be formatted in many different ways: By what information to include (authors, title, journal, year, issue, pages), how to order and format this information, and how to reference these citations in the main text (e.g. by number or author/year). These so-called citation styles are important for printed documents, but are not really relevant for digital content (where citations are exchanged in BibTeX and other data formats). Unfortunately, most manuscript submission systems do not accept references in digital format, and authors are forced to format their references in the style requested by the publisher and include them as plain text at the end of the manuscript (and, in turn, publishers then spend time and money to get these references back into a bibliographic data format).</p>
+<p>What publishers are really interested in are unique identifiers, such as the DOI, for all references. This allows them to double-check the reference information against bibliographic databases (using tools such as eXtyles), and to format the citations into their preferred style. Citation information in free-text format can contain errors, and these errors are propagated if citations are entered manually (see <span class="citation" data-cites="specht_2010">(Specht 2010)</span>).</p>
+<p>Citation styles are needed not only to correctly identify all references (for which bibliographic formats and digital identifiers are better suited), but also to help the researcher while reading the text. Citations are an important part of all scholarly documents, and citation styles should facilitate that process. Even though a number of common styles exist (e.g. APA, MLA, Chicago, Vancouver), there is no standard style for citations in scholarly documents, and with the differences in citation practices between disciplines, it is not likely to ever happen. Some disciplines use simple reference lists at the end of the document, whereas other disciplines use footnotes at the bottom of pages and/or make heavy use of annotations.</p>
+<p>Until it becomes standard practice to submit references in a bibliographic file format together with manuscripts (some publishers do this already), authors must resultingly deal with a large number of citation styles. This also often means changing the citation style when a paper has to be resubmitted to another journal. This is a time consuming endeavor, thus automating the process of adjusting to the various citation styles is an important feature of all reference managers.</p>
+<p>Most reference managers support a large number of citation styles: <a href="http://endnote.com/downloads/styles">EndNote</a> supports over 5,000 bibliographic styles, and <a href="http://www.mendeley.com/citationstyles/">Mendeley</a>, <a href="http://www.zotero.org/support/styles">Zotero</a>, and Papers all support <a href="http://blog.mendeley.com/academic-features/mendeley-contributes-2000-citation-styles-to-the-open-citation-style-repository-at-citationstyles-org/">more than 6,000 citation styles</a>. Some reference managers include a style editor, in case a particular style is not yet supported. Citation styles used to be in proprietary format and owned by the publisher of the reference manager, but the <a href="http://citationstyles.org/">Citation Style Language</a> (CSL) has evolved as an open XML-based language to describe the formatting of citations and bibliographies. Originally created by Bruce D’Arcus and further developed in collaboration with Zotero developer Simon Kornblith, CSL is now also used by Mendeley, Papers, and many other tools and services. In 2012, a <a href="http://editor.citationstyles.org/about/">web-based editor</a> to create and edit CSL styles was launched, facilitating the creation of additional styles.</p>
+<h3 id="examples-of-citation-styles">Examples of citation styles</h3>
+<h4 id="doi">DOI</h4>
+<p><a href="http://dx.doi.org/10.1126/science.1197258">http://dx.doi.org/10.1126/science.1197258</a></p>
+<h4 id="shortdoi">shortDOI</h4>
+<p><a href="http://doi.org/dc3dhn">http://doi.org/dc3dhn</a></p>
+<h4 id="apa">APA</h4>
+<p>Wolfe-Simon, F., Blum, J. S., Kulp, T. R., Gordon, G. W., Hoeft, S. E., Pett-Ridge, J., &amp; Oremland, R. S. (2011). A Bacterium That Can Grow by Using Arsenic Instead of Phosphorus. Science, 332(6034), 1163-1166. <a href="doi:10.1126/science.1197258">doi:10.1126/science.1197258</a></p>
+<h4 id="vancouver">Vancouver</h4>
+<p>Wolfe-Simon F, Blum JS, Kulp TR, Gordon GW, Hoeft SE, Pett-Ridge J, et al. A Bacterium That Can Grow by Using Arsenic Instead of Phosphorus. Science [Internet]. American Association for the Advancement of Science; 2011 Jun 2;332(6034):11636. Available from: <a href="http://dx.doi.org/10.1126/science.1197258">http://dx.doi.org/10.1126/science.1197258</a></p>
+<h4 id="nature">Nature</h4>
+<p>Wolfe-Simon, F. et al. A Bacterium That Can Grow by Using Arsenic Instead of Phosphorus. Science 332, 1163-1166 (2011)</p>
+<h4 id="bibtex">BibTeX</h4>
+<pre><code>@article{wolfe_simon_2011,
+  title={A Bacterium That Can Grow by Using Arsenic Instead of Phosphorus},
+  volume={332}, url={&lt;http://dx.doi.org/10.1126/science.1197258&gt;},
+  DOI={10.1126/science.1197258},
+  number={6034},
+  journal={Science},
+  publisher={American Association for the Advancement of Science},
+  author={Wolfe-Simon, F. and Blum, J. S. and Kulp, T. R. and Gordon, G. W. and Hoeft, S. E. and Pett-Ridge, J. and Stolz, J. F. and Webb, S. M. and Weber, P. K. and Davies, P. C. W. and et al.},
+  year={2011},
+  month={Jun},
+  pages={1163-1166}}</code></pre>
+<h4 id="ris">RIS</h4>
+<pre><code>TY - JOUR
+T2 - Science
+AU - Wolfe-Simon, F.
+AU - Blum, J. S.
+AU - Kulp, T. R.
+AU - Gordon, G. W.
+AU - Hoeft, S. E.
+AU - Pett-Ridge, J.
+AU - Stolz, J. F.
+AU - Webb, S. M.
+AU - Weber, P. K.
+AU - Davies, P. C. W.
+AU - Anbar, A. D.
+AU - Oremland, R. S.
+SN - 0036-8075
+TI - A Bacterium That Can Grow by Using Arsenic Instead of Phosphorus
+SP - 1163
+EP - 1166
+VL - 332
+PB - American Association for the Advancement of Science
+DO - 10.1126/science.1197258
+PY - 2011
+UR - &lt;http://dx.doi.org/10.1126/science.1197258&gt;
+ER -</code></pre>
+<h4 id="citeproc-json">Citeproc JSON</h4>
+<pre class="sourceCode json"><code class="sourceCode json">{
+  <span class="dt">"volume"</span>: <span class="st">"332"</span>,
+  <span class="dt">"issue"</span>: <span class="st">"6034"</span>,
+  <span class="dt">"DOI"</span>: <span class="st">"10.1126/science.1197258"</span>,
+  <span class="dt">"URL"</span>: <span class="st">"&lt;http://dx.doi.org/10.1126/science.1197258&gt;"</span>,
+  <span class="dt">"title"</span>: <span class="st">"A Bacterium That Can Grow by Using Arsenic Instead of Phosphorus"</span>,
+  <span class="dt">"container-title"</span>: <span class="st">"Science"</span>,
+  <span class="dt">"publisher"</span>: <span class="st">"American Association for the Advancement of Science"</span>,
+  <span class="dt">"issued"</span>: {
+    <span class="dt">"date-parts"</span>: [
+      [
+        <span class="dv">2011</span>,
+        <span class="dv">6</span>,
+        <span class="dv">2</span>
+      ]
+    ]
+  },
+  <span class="dt">"author"</span>: [
+    {
+      <span class="dt">"family"</span>: <span class="st">"Wolfe-Simon"</span>,
+      <span class="dt">"given"</span>: <span class="st">"F."</span>
+    },
+    {
+      <span class="dt">"family"</span>: <span class="st">"Blum"</span>,
+      <span class="dt">"given"</span>: <span class="st">"J. S."</span>
+    },
+    {
+      <span class="dt">"family"</span>: <span class="st">"Kulp"</span>,
+      <span class="dt">"given"</span>: <span class="st">"T. R."</span>
+    },
+    {
+      <span class="dt">"family"</span>: <span class="st">"Gordon"</span>,
+      <span class="dt">"given"</span>: <span class="st">"G. W."</span>
+    },
+    {
+      <span class="dt">"family"</span>: <span class="st">"Hoeft"</span>,
+      <span class="dt">"given"</span>: <span class="st">"S. E."</span>
+    },
+    {
+      <span class="dt">"family"</span>: <span class="st">"Pett-Ridge"</span>,
+      <span class="dt">"given"</span>: <span class="st">"J."</span>
+    },
+    {
+      <span class="dt">"family"</span>: <span class="st">"Stolz"</span>,
+      <span class="dt">"given"</span>: <span class="st">"J. F."</span>
+    },
+    {
+      <span class="dt">"family"</span>: <span class="st">"Webb"</span>,
+      <span class="dt">"given"</span>: <span class="st">"S. M."</span>
+    },
+    {
+      <span class="dt">"family"</span>: <span class="st">"Weber"</span>,
+      <span class="dt">"given"</span>: <span class="st">"P. K."</span>
+    },
+    {
+      <span class="dt">"family"</span>: <span class="st">"Davies"</span>,
+      <span class="dt">"given"</span>: <span class="st">"P. C. W."</span>
+    },
+    {
+      <span class="dt">"family"</span>: <span class="st">"Anbar"</span>,
+      <span class="dt">"given"</span>: <span class="st">"A. D."</span>
+    },
+    {
+      <span class="dt">"family"</span>: <span class="st">"Oremland"</span>,
+      <span class="dt">"given"</span>: <span class="st">"R. S."</span>
+    }
+  ],
+  <span class="dt">"editor"</span>: [
+  ],
+  <span class="dt">"page"</span>: <span class="st">"1163-1166"</span>,
+  <span class="dt">"type"</span>: <span class="st">"article-journal"</span>
+}</code></pre>
+<h2 id="managing-full-text-content">Managing full-text Content</h2>
+<p>Reference management has traditionally been about managing information about scholarly content (authors, title, journal, and other metadata). With the switch to digital publication and the availability of content in PDF, as well as other formats, reference management increasingly dealt with managing this digital content: linking references to the full-text document on the computer, performing full-text search, making annotations in the PDF, managing the PDF files on the hard drive, etc.. Papers was the first reference manager to focus on this aspect, but most reference managers now have functionality to manage PDF files.</p>
+<p>Most scholarly journal articles are currently distributed via subscription journals. This makes it important to store a copy on the local hard drive for easier access, but it can also create problems when these PDF files are shared with collaborators (which most publishers do not allow, even within the same institution). Reference management software therefore has to make decisions as to what is technically possible and convenient for researchers vs. what is possible under copyright law (see chapter 15, Stodden: Intellectual Property and Computational Science).</p>
+<p>Content published as open access does not have these limitations. This not only makes it much easier to share relevant full-text articles with collaborators, but it also means that we often do not need to store a copy of the full-text on the local hard drive, as the content is readily available.</p>
+<h2 id="reference-management-tools">Reference Management Tools</h2>
+<p>From the large number of available reference managers, we have chosen seven popular products that are described in more detail below. We have included a table that gives an overview of their basic features. A feature list is not the only criterion in picking a reference manager though; ease of use, stability, price, and available support in case of questions are equally important factors.</p>
+<h3 id="endnote">EndNote</h3>
+<p>EndNote is a commercial reference management software package produced by Thomson Reuters. Endnote is one of the most popular reference managers and has been around for more than 20 years. It allows the collection of references from online resources and PDFs. References from bibliographic databases can be imported into EndNote libraries. full-text can be imported too. EndNote provides plugins for Microsoft Word and OpenOffice. References can be exported to BibTeX. While EndNote does not include any collaborative features, EndNote Web provides the functionality for collaboration with other users. Users can give group members read/write access to their references and import references from other people’s libraries. Endnote also integrates with other bibliographic tools produced by Thomson Reuters, including Web of Science and ResearcherID.</p>
+<h3 id="mendeley">Mendeley</h3>
+<p>Mendeley is a reference manager developed by a London-based startup. Its strength lies in its networking and collaborative features, and also in providing facilities for easily managing PDF files. It offers both a desktop and a web version with synchronized bibliographic information, allowing access from several computers and collaboration with other users. PDF files can be imported into Mendeley desktop and metadata such as authors, title, and journal are automatically extracted. It is possible to do a full-text search, highlight text in PDFs, and add sticky notes.</p>
+<p>The web version recommends papers to users based on their profiles and the content in their libraries. Users can create both private and public groups and share papers and annotations. Mendeley is free to use, but costs a monthly fee if the number of documents in Mendeley web or the number of private groups exceeds a limit.</p>
+<h3 id="zotero">Zotero</h3>
+<p>Zotero is a popular open source reference manager, originally developed as a plugin for the Firefox browser. The newer Zotero Standalone offers the same functionality but runs as a separate program and works with Firefox, Chrome, and Safari. Zotero also includes a hosted version in order to synchronize references across devices and share them in private or public groups.</p>
+<p>Zotero allows users to collect and to organize a variety of web sources such as citations, full-texts, web pages, images and audio files directly in the browser. Citations from Zotero can be integrated into Microsoft Word and OpenOffice.</p>
+<h3 id="refworks">RefWorks</h3>
+<p>RefWorks is a commercial web-based reference manager by ProQuest. The Write N Cite utility enables the integration of references into Microsoft Word where in-text citations and reference lists can be formatted into various styles. RefWorks makes it easy to collaborate with others as all references are stored in the web-based version. The Write N Cite utility can also work offline, but RefWorks is not the right tool for researchers with intermittent or poor internet connectivity.</p>
+<h3 id="papers">Papers</h3>
+<p>Papers is a commercial reference management software, now part of Springer Science+Business media. Initially Papers was only available for Mac, but now there are also versions for iPad and PC. Its main strength is its excellent handling of PDF documents (including metadata extraction) and its polished user interface, whereas the collaborative features are less developed than in some of the other products. Papers uses the Citation Style Language and provides a word processor plugin.</p>
+<h3 id="jabref">JabRef</h3>
+<p>JabRef is an open source bibliography reference manager popular with LaTeX users. It runs on Java and is thus compatible with Windows, Linux, and Mac. The native file format is BibTeX which is the standard LaTeX bibliography format. The strength of JabRef is that references can be formatted directly in LaTeX, thus providing access and control over a wide range of citation styles. JabRef provides direct search and downloads from PubMed and IEEEXplore. There are plugins for word processing programs and also other Java based plugins, which expand the general functionality.</p>
+<h3 id="citeulike">CiteULike</h3>
+<p>CiteULike is a free online reference manager and social bookmarking tool. References are primarily entered via a bookmarklet that captures bibliographic content in web pages. New entries are public by default and are added to the common library, but entries can be also made private. Users can assign tags to entries which make it easier to organize and search through content. References can be exported in BibTeX and RIS formats. The social networking features are the strength of CiteULike. Users can create profiles, connect with other researchers, and create and join groups where they can collaborate on library content.</p>
+<h3 id="other-reference-management-products">Other Reference Management Products</h3>
+<p>Many other reference managers are available, including Citavi which is popular in some disciplines and also helps with knowledge management, and ReadCube which has a very nice user interface and a good PDF viewer. An extensive list and comparison of available reference management software <a href="http://en.wikipedia.org/wiki/Comparison_of_reference_management_software">can be found on Wikipedia</a>.</p>
+<figure><a href=""><img src="/images/reference_management_comparison.png" alt="Figure 2. Feature comparison of popular reference managers. Adapted from (M. Fenner 2010)."></a><figcaption><strong>Figure 2</strong>. Feature comparison of popular reference managers. Adapted from <span class="citation" data-cites="fenner_2010b">(M. Fenner 2010)</span>.</figcaption></figure><h2 id="outlook">Outlook</h2>
+<p>Reference management has become easier, cheaper, and more social in the past few years, and this trend will continue. We will see the integration of unique author identifiers (ORCID, etc.) into bibliographic databases and reference management tools (see case 21, Fenner &amp; Haak: Unique Identifiers for Researchers), and this will facilitate the discovery of relevant literature and the automatic updating of publication lists. We will increasingly see citations of datasets and other non-text content (see chapter 14, Pampel &amp; Dallmeier-Tiessen: Open Research Data - From Vision to Practice). Digital identifiers for content and support for the open Citation Style Language will also increase, as will the availability of open bibliographic information. Three areas still need improvement: Firstly, the automatic importing of the references of a particular publication, and the integration of reference managers into authoring tools. Secondly,the word processor plugins for reference managers still do not work together, and some of the newer online authoring tools (Google Docs, etc.) need to be better integrated with reference managers. Finally, instead of having references in plain text, which makes it difficult to get to the full-text and reformat it into a different citation style, publishers, institutions, and funders should start to ask for reference lists in standard bibliographic formats using digital identifiers.</p>
+<div class="references">
+<h2>References</h2>
+<p>Fenner, M., 2010. Reference manager overview. <em>Gobbledygook</em>. Available at: <a href="http://blogs.plos.org/mfenner/reference-manager-overview/">http://blogs.plos.org/mfenner/reference-manager-overview/</a>.</p>
+<p>Fenner, M.H., 2010. Reference management meets Web 2.0. <em>Cell Ther Transplant</em>. doi:<a href="http://dx.doi.org/10.3205/ctt-2010-en-000087.01">10.3205/ctt-2010-en-000087.01</a>.</p>
+<p>Gilmour, R. &amp; Cobus-Kuo, L., 2011. Reference Management Software: a Comparative Analysis of Four Products. <em>Issues in Science and Technology Librarianship</em>. doi:<a href="http://dx.doi.org/10.1371/journal.pcbi.1000204">10.1371/journal.pcbi.1000204</a>.</p>
+<p>Specht, C.G., 2010. Opinion: Mutations of citations. <em>The Scientist</em>. Available at: <a href="http://www.the-scientist.com/?articles.view/articleNo/29252/title/Opinion--Mutations-of-citations/">http://www.the-scientist.com/?articles.view/articleNo/29252/title/Opinion--Mutations-of-citations/</a>.</p>
+</div>
+</body></html>
+
+
+            <div class="license">
+              
+                <hr>
+                <div class="toc-item">
+                  <h3>Next chapter: <a href="/tools/open_access_state_of_the_art.html">Open Access: A State of the Art</a></h3>
+                  <p>
+                    Dagmar Sitek & 
+                    Roland Bertelmann</p>
+                  
+                </div>
+              
+              
+            </div>
+
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'openingscience'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+          </div>
+        </div>
+
+        <!-- COinS metadata (for citation managers like Zotero etc), goes in body text -->
+<span
+  class="Z3988"
+  title="ctx_ver=Z39.88-2004
+  &amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc
+  &amp;rfr_id=info%3Asid%2Focoins.info%3Agenerator
+  &amp;rft.title=Reference Management
+  &amp;rft.creator=
+  &amp;rft.date=2013-08-08
+  &amp;rft.language=EN
+  &amp;rft.rights=CC0
+  &amp;rft_id=http://book.openingscience.org/tools/reference_management.html">
+</span>
+
+        <!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setCookieDomain", "*.www.openingscience.org"]);
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hiig.de/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "3"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/js/js-yaml.min.js"></script>
+
+    <!-- Fluidbox https://github.com/terrymun/Fluidbox -->
+    <script src="/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/js/jquery.fluidbox.min.js"></script>
+    <script type='text/javascript'>
+      $(function () {
+        $("a").fluidbox();
+      });
+    </script>
+
+    <!-- Bootstrap -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="/js/jasny-bootstrap.min.js"></script>
+
+    <!-- MathJax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </body>
+</html>

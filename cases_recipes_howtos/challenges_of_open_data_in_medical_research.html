@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <title>Challenges of Open Data in Medical Research</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Ralf Floca" />
+    <meta name="keywords" content="" />
+
+    <!-- RDFa Metadata (in DublinCore) -->
+    <meta property="dc:title" content="Challenges of Open Data in Medical Research" />
+    <meta property="dc:creator" content="Ralf Floca" />
+    <meta property="dc:format" content="text/html" />
+    <meta property="dc:language" content="en" />
+    <meta property="dc:identifier" content="/cases_recipes_howtos/challenges_of_open_data_in_medical_research.html" />
+    <meta property="dc:rights" content="CC-BY-NC" />
+    <meta property="dc:source" content="Opening Science" />
+    <meta property="dc:subject" content="Scholarly Communication" />
+    <meta property="dc:type" content="website" />
+
+    <!-- Google Scholar Metadata -->
+    <meta name="citation_author" content="Ralf Floca"/>
+    <meta name="citation_title" content="Challenges of Open Data in Medical Research"/>
+    <meta name="citation_journal_title" content="Opening Science"/>
+
+    <link rel="alternate" type="application/rss+xml" title="Opening Science" href="/rss.xml" />
+    <link rel="alternate" type="application/atom+xml" title="Opening Science" href="/atom.xml" />
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/app-90174b04f571833875511d8c4181b385.css">
+    <link rel="stylesheet" href="/assets/jasny-bootstrap.min-858066d22662d38bbc0ba337e5dfdfbb.css">
+    <link rel="stylesheet" href="/assets/navmenu-push-9a65531d989d060d6e1c9046851a6a91.css">
+    <link rel="stylesheet" href="/assets/fluidbox-1e4d75d5984979bafa6c14619443b4d2.css">
+
+    <!-- d3.js -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.2/d3.min.js"></script>
+
+    <!-- Adobe Web Fonts -->
+    <script src="//use.edgefonts.net/rosario.js"></script>
+  </head>
+
+
+  <body>
+    <nav id="navmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas" role="navigation">
+  <a class="navmenu-brand" href="#">Opening Science - The Book</a>
+  <ul class="nav navmenu-nav">
+  
+    <li><span class="glyphicon glyphicon-folder-open"></span> Cases, Recipes & Howtos</li>
+  
+  
+    <li><span class="glyphicon glyphicon-calendar"></span> 19 January 2014</li>
+  
+  
+    <li><span class="glyphicon glyphicon-link"></span> <a href="http://dx.doi.org/10.1007/978-3-319-00026-8_22">doi: 10.1007/978-3-319-00026-8_22</a></li>
+  
+    <li><span class="glyphicon glyphicon-time"></span> <a href="http://github.com/openingscience/book/commits/master/_posts/2013-08-22-challenges_of_open_data_in_medical_research.md">Version History</a></li>
+    <li><span class="glyphicon glyphicon-edit"></span> <a href="http://prose.io/#openingscience/book/edit/master/_posts/2013-08-22-challenges_of_open_data_in_medical_research.md">Send Edit Request</a></li>
+    
+    <li><span class="glyphicon glyphicon-home"></span> <a href="/">Home</a></li>
+    <li><span class="glyphicon glyphicon-info-sign"></span> <a href="/about.html">About</a></li>
+    <li><span class="glyphicon glyphicon-tags"></span> <a href="/tags.html">All Tags</a></li>
+    <li><a href="http://creativecommons.org/licenses/by-nc/3.0/deed.en" class="logo"><img src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png"></a></li>
+  </ul>
+</nav>
+
+    <div class="navbar navbar-default navbar-fixed-top">
+      <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#navmenu" data-canvas="body">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="container">
+      <a href="https://github.com/openingscience/book"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://github-camo.global.ssl.fastly.net/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="page-header">
+            <h1>Challenges of Open Data in Medical Research</h1>
+            <p>Ralf Floca</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<h2>Abstract</h2>
+  <p>The success of modern, evidence based and personalized medical research is highly dependent on the availability of a sufficient data basis in terms of quantity and quality. This often also implies topics like exchange and consolidation of data. In the area of conflict between data privacy, institutional structures and research interests, several technical, organizational and legal challenges emerge. Coping with these challenges is one of the main tasks of information management in medical research. Using the example of cancer research, this case study points out the marginal conditions, requirements and peculiarities of handling research data in the context of medical research.</p>
+<div class="references">
+
+</div>
+
+<h2 id="introduction">Introduction</h2>
+<p>First the general importance of data exchange and consolidation will be discussed. In the second section, the important role of the patient in medical research will be addressed and how it affects the handling of data. The third section focuses on the question what the role of open data could be in this context. Finally, the fourth section tackles the topic of challenges of open data in the context of medical (research) data. It tries to illustrate why it is a problem and what the obstacles are.</p>
+<h2 id="importance-of-data-exchange-and-consolidation">Importance of Data Exchange and Consolidation</h2>
+<p>With oncology striving after personalized medicine and individualized therapy, stratification becomes a major topic in cancer research. The stratification of tumor biology and patients is important to provide individual therapies with maximum tumor control (optimally total remission) and minimal side effects and risks for the patient. Therefore, the search for diagnostic markers, e.g. diagnostic imaging, antibody tests or genome analysis, as well as for adequate treatments with respect to specific markers is constantly intensified.</p>
+<p>Looking at research results, it becomes obvious that cancer diseases (e.g. prostate cancer or breast cancer) are more like disease families with a multitude of sub-types and that the anatomical classification of tumors might be misleading and a classification according to the pathological change of signaling pathways on the cellular level is more adequate. This differentiation is very relevant because for one patient a certain treatment may be effective and absolutely relevant while it has no positive impact on tumor control for other patients with the “same” cancer and only bears side effects.</p>
+<p>In order to have an evidence-based medicine with a sound statistical basis, the amount and quality of available data becomes very important. The required amount of data increases with the number of relevant factors. Looking at the current cancer research, one has a vast array of factors and information—and it is still increasing. One has for example the patient and tumor biology (e.g. a multitude of diagnostic images; analysis of the genome, proteome etc; lab results; cell pathologies; …); way of living before and after the diagnose/therapy; environmental factors and chosen individual therapy.</p>
+<p>The current situation can therefore be characterized as too few cases for too many factors. The size of sample sets even large institutions can collect is too small for evidence-based and highly stratified medicine. John Wilbanks, the chief commons officer of Sage Bionetworks<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>, put this fact more bluntly:</p>
+<blockquote>
+<p>[…] neither Google nor Facebook would make a change to an advertising algorithm with a sample set as small as that used in a Phase III clinical trial. <small>John Wilbanks, Sage Bionetworks. Kotz, J.; <em>SciBX</em> 5(25); 2012</small></p>
+</blockquote>
+<p>One strategy to tackle these shortcomings is to build up networks and initiatives and pool the data to acquire sufficient sample sets<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>. This is not a trivial task because of the heterogeneity of the public health sector that has to be managed. You have got several stakeholders, heterogeneous documentation of information (different in style, recorded data, formats, storage media) and different operational procedures (time and context of data acquisition).</p>
+<p>Thus, it is inevitable to cope with this heterogeneity and to build large study bases by sharing and pooling medical research data in order to realize evidence-based personalized medicine. One way to achieve this goal could be the adaption of ideas and concepts of open research data (see below).</p>
+<h2 id="role-of-the-patient-and-its-data">Role of the Patient and Its Data</h2>
+<p>As described in the previous section, data is of high importance. This data cannot be collected without patients and their cooperation is crucial on several levels. This leads to a very central role for the patient and, in addition, to a special nature of medical data and its acquisition compared to other research data.</p>
+<h3 id="medical-data-is-personal-data">1. Medical data is personal data</h3>
+<p>By default medical data is always personal data. The implications that derive from this fact may vary according to the legal framework of a country (e.g. USA: Health Insurance Portability and Accountability Act (HIPAA); Germany: right to informational self-determination/personal rights), but it has almost always an impact on how medical data may be acquired, stored and used. In Germany, for instance, an individual (in this context a patient) must always be able to query which personal information is stored, where the information is stored and for which purpose this information is used. The information may only be altered, transferred, used, stored or deleted with according permission and sufficient traceability guaranteed.</p>
+<h3 id="ethics">2. Ethics</h3>
+<p>Having an experimental setup that allows the acquisition of data suitable for verifying or falsifying the scientific hypothesis goes without saying. But in the context of human research it is also mandatory to ensure that ethical principles are regarded. These principles are often derived from the Declaration of Helsinki<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a> and implemented by national regulations (e.g. USA: institutional review boards; Germany: Ethikkommision). Thus every study design is reviewed and needs ethic approval. This may lead to situations where experimental setups are optimal from a technocratic research perspective but cannot be approved ethically and therefore must be altered or not conducted.</p>
+<h3 id="lack-of-predictability-and-limits-of-measurements">3. Lack of predictability and limits of measurements</h3>
+<p>Most research-relevant incidents (e.g. (re)occurrence of an illness, adverse reactions) are not predictable and not projectable (fortunately; see “Ethics”). Therefore, you have to wait until enough natural incidents have happened and are monitored. The latter can be complicated, because not every measurement technique can be used arbitrarily frequent due to technical, ethical<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a> or compliance<a href="#fn5" class="footnoteRef" id="fnref5"><sup>5</sup></a> reasons. Without the possibilities to repeat<a href="#fn6" class="footnoteRef" id="fnref6"><sup>6</sup></a> “measurements” and in conjunction with the heterogeneity explained in the previous section, getting a sufficient number of cases is a nontrivial task.</p>
+<h3 id="long-field-observation-periods">4. Long “field” observation periods</h3>
+<p>In order to derive conclusions that really matter for patients, like “improved survival”or “improved quality of life” you need observation periods of 10 and more years. In this time, the individuals will move around in the distributed public health system (e.g. by changing their place of residence, choosing new general practitioners). Data will be accumulated, but is not centrally available because of the heterogeneous nature of the system. Therefore, keeping track on a study participant and assembling a non-biased, non-filtered view on study relevant data<a href="#fn7" class="footnoteRef" id="fnref7"><sup>7</sup></a> can be very complicated.</p>
+<h3 id="compliance">5. Compliance</h3>
+<p>Besides all the explained technical and organizational problems, the key stakeholder is the study participant / patient and its compliance to the study and the therapy. If the participant is not compliant to the study, he drops out, which results in missing data. This missing data can lead to a selection bias and must be handled with expertise in order to make a reliable assessment of the trial’s result. The dropout rates vary and depend on the study; rates around 20% are not unusual, also rates up to 50% have been reported.</p>
+<p>Participants that are not therapy compliant alter the therapy or skip it totally (e.g. changing medication; skipping exercises; taking additional drugs). According to a report (WHO 2003) of the World Health Organization up to 50% of the patients are not therapy compliant. An unnoticed lack of therapy compliance may introduce a bias towards the trial results.</p>
+<h3 id="consent">6. Consent</h3>
+<p>The patient has to consent<a href="#fn8" class="footnoteRef" id="fnref8"><sup>8</sup></a> on three levels before he can be part of a medical trial. First, he must consent to a therapy that is relevant for the trial. Second, if all inclusion criteria and no exclusion criteria for the trial are met, the patient must consent to be part of the trial. Third, the patient must consent to the usage of the data. The third consent exists in different types, namely: specific, extended, unspecific/broad. The specific consent limits the usage to the very trial it was made for. In the context of open data this type of consent is not useful and is considered as limiting by many researchers (see challenges). The extended consent often allows the usage for other questions in the same field as the original trial (e.g. usage for cancer research). If it is extended to a level where any research is allowed, it is an unspecific consent. An example for this type of consent is the Portable Legal Consent devised by the project “Consent to Research”<a href="#fn9" class="footnoteRef" id="fnref9"><sup>9</sup></a>.</p>
+<p>You may find each aspect in other types of research data, but the combination of all six aspects is very distinctive for medical research data and makes special handling necessary.</p>
+<h2 id="role-of-open-research-data">Role of Open Research Data</h2>
+<p>The chapter “Open Research Data: From Vision to Practice” in this book gives an overview over the benefits open data is supposed to bring. Websites like “Open access success stories”<a href="#fn10" class="footnoteRef" id="fnref10"><sup>10</sup></a> try to document these benefits arising from open access/open science. Also in the broad field of medical research, many groups advocate a different handling of data (often in terms of open data).</p>
+<p>One main reason is the requirement of transparency and validation of results and methods. For example in the domain of medical image processing the research data (test data, references and clinical meta data) is often not published. This renders the independent testing and verification of published results, as well as the translation into practice very difficult. Thus initiatives like the concept of Deserno et al. (2012) try to build up open data repositories. Another example would be the article of Begley and Ellis (2012), which discusses current problems in preclinical cancer research. Amongst others, it recommends a publishing of positive and negative result data in order to achieve more transparency and reliability of research.</p>
+<p>Besides this, several groups (e.g. the <a href="http://www.geneticalliance.org">Genetic Alliance</a> or the former mentioned project Consent to Research) see open access to data as the only sensible alternative to the ongoing privatization of science data and results. For instance the company <a href="http://www.23andme.com/about/press/12_11_2012">23andMe</a> offers genome sequencing for 99$. In addition to the offered service the company builds up a private database for research and the customers consent that this data may be used by the company to develop intellectual property and commercialize products<a href="#fn11" class="footnoteRef" id="fnref11"><sup>11</sup></a>.</p>
+<p>Another topic where the research community could benefit from the implementation of open data publishing is the heterogeneity of data (see next section: challenges). Making data available means, that it is:</p>
+<ul>
+<li>open (in terms of at least one public proceeding to get access)</li>
+<li>normed (content of data and semantics are well defined)</li>
+<li>machine readable</li>
+<li>in standardized format</li>
+</ul>
+<p>Having this quality of data would be beneficial, for instance, for radiology, whose „[…] images contain a wealth of information, such as anatomy and pathology, which is often not explicit and computationally accessible […]“, as stated by Rubin et al. (2008). Thus, implementing open data could be an opportunity to tackle this problem as well.</p>
+<h2 id="challenges">Challenges</h2>
+<p>The previous sections have discussed the need for data consolidation, the peculiarities of medical research data and how medical research is or could be (positively) affected by concepts of open research data. It is irrelevant which approach is taken in order to exchange and consolidate data, you will always face challenges and barriers on different levels: regulatory, organizational and technical.</p>
+<p>The general issues and barriers are discussed in detail by Pampel and Dallmeier-Tiessen (see chapter 14, Open Research Data: From Vision to Practice). This section adds some aspects to this topic from the perspective of medical research data.</p>
+<p>Regulatory constraints for medical (research) data derive from the necessity of ethic approval and legal compliance when handling personal data (see section 2, point 1 and 2). There are still open discussions and work for the legislative bodies to provide an adequate frame. The article of Erika C. Hayden (2012a) depicts the informed consent as a broken contract and illustrates how today on one hand participants feel confused by the need of “reading between the lines”, on the other hand researchers cannot pool data due to specific consents and regulatory issues.</p>
+<p>Although there are open issues on the regulatory level, ultimately it will be the obstacles on the organizational and technical level – which may derive from regulatory decisions – which determine if and how open data may improve medical research. Therefore, two of these issues will be discussed in more detail.</p>
+<h2 id="pooling-the-data">Pooling the Data</h2>
+<p>Given that the requirements are met and you are allowed to pool the data of different sources for your medical research, you have to deal with two obstacles: mapping the patient and data heterogeneity.</p>
+<p>As previously noted, patients move within the public health system and therefore medical records are created in various locations. In order to pool the data correctly, you must ensure that all records originated with an individual are mapped towards it but no other records. Errors in this pooling process lead either to “patients” consisting of data from several individuals or the splitting of one individual in several “patients”. Preventing these errors from happening can be hard to implement because prevention strategies are somehow competing (e.g. if you have very strict mapping criteria, you minimize the occurrence of multi-individual-patients but have a higher change of split individuals due to typing errors in the patient name).</p>
+<p>In the case that you have successfully pooled the data and handled the mapping of patients, the issue of heterogeneity remains. This difference of data coverage, structure and semantics between institutions (which data they store, how the data is stored and interpreted) makes it difficult to guarantee comparability of pooled data and to avoid any kind of selection bias (e.g.: Is an event really absent or just not classified appropriately by a pooled study protocol).</p>
+<h2 id="anonymization-pseudonymization-and-reidentification">Anonymization, Pseudonymization and Reidentification</h2>
+<p>Individuals must be protected from (re)identification via their personal data used for research. German privacy laws, for instance, define anonymization and pseudonymization as sufficient, if they prohibit reidentification or reidentification is only possible with a disproportional large expenditure of time, money and workforce<a href="#fn12" class="footnoteRef" id="fnref12"><sup>12</sup></a>. Ensuring this requirement becomes increasingly harder due to technical progress, growing computational power and – ironically – more open data.</p>
+<p>Reidentification can be done via data-mining of accessible data and so-called quasi-identifiers, a set of (common) properties that are – in their combination – so specific that they can be used to identify. A modern everyday life example would be <a href="http://panopticlick.eff.org">Panopticlick</a>. It is a website of the Electronic Frontier Foundation that demonstrates the uniqueness of a browser (Eckersley 2010) which serves as a quasi-identifier. Therefore, a set of “harmless” properties is used, like screen resolution, time zone or installed system fonts.</p>
+<p>The following examples illustrate possibilities and incidents of reidentification:</p>
+<ol type="a">
+<li>
+<strong>Simple demographics</strong>. The publications of Sweeney (2000) and Golle (2006) indicate that for 63%–87% of the U.S. citizens the set of birth date, sex and postal code is unique and a quasi-identifier.</li>
+<li>
+<strong>ICD codes</strong>. Loukides et al. (2010) assume that 96.5% of the patients can be identified by their set of ICD9<a href="#fn13" class="footnoteRef" id="fnref13"><sup>13</sup></a> diagnoses codes. For their research the Vanderbilt Native Electrical Conduction (VNEC) dataset was used. The data set was compiled and published for an NIH<a href="#fn14" class="footnoteRef" id="fnref14"><sup>14</sup></a> funded genome-wide association study.</li>
+<li>
+<strong>AOL search data</strong>. AOL put anonymized Internet search data (including health-related searches) on its web site. New York Times reporters (Barbaro et al. 2006) were able to re-identify an individual from her search records within a few days.</li>
+<li>
+<strong>Chicago homicide database</strong>. Students (Ochoa et al. 2001) were able to re-identify a 35% of individuals in the Chicago homicide database by linking it with the social security death index.</li>
+<li>
+<strong>Netflix movie recommendations</strong>.<a href="#fn15" class="footnoteRef" id="fnref15"><sup>15</sup></a> Individuals in an anonymized publicly available database of customer movie recommendations from Netflix are re-identified by linking their ratings with ratings in a publicly available Internet movie rating web site.</li>
+<li>
+<strong>Re-identification of the medical record of the governor of Massachusetts</strong>. Data from the Group Insurance Commission, which purchases health insurance for state employees, was matched against the voter list for Cambridge, re-identifying the governor’s health insurance records (Sweeney 2002).</li>
+</ol>
+<p>The examples illustrate the increasing risk of reidentifiaction and the boundary is constantly pushed further. If you look for example at the development of minaturised DNA sequenzing systems<a href="#fn16" class="footnoteRef" id="fnref16"><sup>16</sup></a> (planned costs of 1000 US$ per device), sequencing DNA (and using it as data) will presumably not stay limited to institutions and organisations who can afford currently expensive sequencing technologies.</p>
+<p>Thus proceedings that are compliant to current privacy laws and the common understanding of privacy are only feasible if data is dropped or generalized (e.g. age bands instead of birth date or only the first two digits of postal codes). This could be done for example by not granting direct access to the research data but offering a view tailored for the specific research aims. Each view ponders the necessity and usefulness of each data element (or possible generalizations) against the risk of reidentification.</p>
+<p>Even if an infrastructure is provided that enables the filtering of data described above, you will always have medical data that is easily reidentifiable and at least hard to be pseudonymized. Good examples are radiological head or whole body images. Figure 1 shows head images from a study participant<a href="#fn17" class="footnoteRef" id="fnref17"><sup>17</sup></a>. The original perspective of the image (axial view) and the other medical perspectives (sagittal and coronal view) may not be suitable for reidentification by everyman. But a simple volume rendering of the data (Figure 2) allows easy reidentification. Starting from this point with modern technologies several scenarios are not too far-fetched. An artificial picture, for instance, could be reconstructed and used with available face recognition APIs<a href="#fn18" class="footnoteRef" id="fnref18"><sup>18</sup></a> or you could take the volume data convert it into a 3D model and print it via a 3D-printer<a href="#fn19" class="footnoteRef" id="fnref19"><sup>19</sup></a>.</p>
+<figure><a href=""><img src="/images/challenges_of_open_data.png" alt="Figure 1. Example for a magnetic resonance head image (MRI). The upper MRI shows an original layer of data set of an study participant (axial view, parallel to the feet). The MRIs below are reconstructions of the original data in sagittal view (left) and coronal view (right). The sagittal view is similar to a head silhouette and therefore more familiar."></a><figcaption><strong>Figure 1</strong>. Example for a magnetic resonance head image (MRI). The upper MRI shows an original layer of data set of an study participant (axial view, parallel to the feet). The MRIs below are reconstructions of the original data in sagittal view (left) and coronal view (right). The sagittal view is similar to a head silhouette and therefore more familiar.</figcaption></figure><figure><a href=""><img src="/images/challenges_of_open_data_2.png" alt="Figure 2. Volumetric rendering of the data set shown in Figure 1. The possibility to reidentify is now strikingly obvious. Volumetric rendering can easily be done with software tools publically available."></a><figcaption><strong>Figure 2</strong>. Volumetric rendering of the data set shown in Figure 1. The possibility to reidentify is now strikingly obvious. Volumetric rendering can easily be done with software tools publically available.</figcaption></figure><h2 id="references">References</h2>
+<p>Barbaro, M. et al., 2006. A face is exposed for AOL searcher no. 4417749. <em>NY Times</em>.</p>
+<p>Begley, C.G. &amp; Ellis, L.M., 2012. Drug development: Raise standards for preclinical cancer research. <em>Nature</em>, 483(7391), pp.531–533. doi:10.1038/483531a.</p>
+<p>Check Hayden, E., 2012a. Informed consent: A broken contract. <em>Nature</em>, 486(7403), pp.312–314. doi:10.1038/486312a.</p>
+<p>Check Hayden, E., 2012b. Nanopore genome sequencer makes its debut. <em>Nature</em>. doi:10.1038/nature.2012.10051.</p>
+<p>Deserno, T.M., Welter, P. &amp; Horsch, A., 2012. Towards a Repository for Standardized Medical Image and Signal Case Data Annotated with Ground Truth. <em>Journal of Digital Imaging</em>, 25(2), pp.213–226. doi:10.1007/s10278-011-9428-4.</p>
+<p>Eckersley, P., 2010. How Unique Is Your Browser? In <em>Proceedings of the Privacy Enhancing Technologies Symposium (PETS 2010)</em>. Springer Lecture Notes in Computer Science.</p>
+<p>Golle, P., 2006. Revisiting the uniqueness of simple demographics in the US population. In <em>WPES 2006 Proceedings of the 5th ACM workshop on Privacy in electronic society</em>. New York, NY, USA: ACM, pp. 77–80.</p>
+<p>Loukides, G., Denny, J.C. &amp; Malin, B., 2010. The disclosure of diagnosis codes can breach research participants’ privacy. <em>J Am Med Inform Assoc</em>, 17, pp.322–327.</p>
+<p>Ochoa, S. et al., 2001. Reidentification of individuals in Chicago’s homicide database: A technical and legal study. In Massachusetts Institute of Technology.</p>
+<p>Rubin, D.L. et al., 2008. iPad: Semantic Annotation and Markup of Radiological Images. In <em>AMIA Annu Symp Proc.</em> pp. 626–630.</p>
+<p>Sweeney, L., 2002. k-Anonymity: A Model for Protecting Privacy. <em>International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems</em>, 10(05), pp.557–570. doi:10.1142/S0218488502001648.</p>
+<p>Sweeney, L., 2000. Uniqueness of Simple Demographics in the U.S. Population, LIDAPWP4. In Pittsburgh, USA: Carnegie Mellon University, Laboratory for International Data Privacy.</p>
+<p>WHO, 2003. <em>Report. Adherence to Long-Term Therapies: Evidence for Action</em>, Available at: <a href="http://www.who.int/chp/knowledge/publications/adherence_report/en/">http://www.who.int/chp/knowledge/publications/adherence_report/en/</a>.</p>
+<div class="references">
+
+</div>
+<section class="footnotes"><hr>
+<ol>
+<li id="fn1"><p>Sage Bionetworks is the name of a research institute which promotes biotechnology by practicing and encouraging open science. It is founded with a donation of the pharmaceutical services company Quinitles. cf. <a href="http://en.wikipedia.org/wiki/Sage_Bionetworks">http://en.wikipedia.org/wiki/Sage_Bionetworks</a><a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>An Example is the German Consortium for Translational Cancer Research (Deutsches Konsortium für Translationale Krebsforschung, DKTK; <a href="http://www.dkfz.de/de/dktk/index.html">http://www.dkfz.de/de/dktk/index.html</a>. One objective in the DKTK is the establishement of a clinical communication platform. This platform aims amongst others to better coordinate and standardize multi centric studies.<a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p>The Declaration was originally adopted in June 1964 in Helsinki, Finland. The Declaration is an important document in the history of research ethics as the first significant effort of the medical community to regulate research itself, and forms the basis of most subsequent documents.<a href="#fnref3">↩</a></p></li>
+<li id="fn4"><p>e.g.: you cannot repeat an x-ray based imaging arbitrarily often, due to radiation exposition; you cannot expect a person suffering from cancer to daily lie in a MRI scanner for an hour.<a href="#fnref4">↩</a></p></li>
+<li id="fn5"><p>e.g.: The payload for an imaging study can easily double the duration of an examination. This may lead to more stress for the participant and decreasing compliance.<a href="#fnref5">↩</a></p></li>
+<li id="fn6"><p>Single measurements can be repeated (but this implies stress and leads to decreasing compliance; or is not ethically not compliant). But the complete course of treatment cannot be repeated; if a treatment event is missed, it is missed.<a href="#fnref6">↩</a></p></li>
+<li id="fn7"><p>This could be a lot of (different) data. See for example the relevant factors from section 1.<a href="#fnref7">↩</a></p></li>
+<li id="fn8"><p>The necessity for an informed consent of the patient can be derived from legal (see point 1) and ethical (see point 2) requirements. It is explained in detail here to characterize the different types of consent.<a href="#fnref8">↩</a></p></li>
+<li id="fn9"><p>“Consent to Research” / <a href="http://weconsent.us/">WeConsent.us</a>, is an initiative by John Wilbanks / Sage Bionetwirks with the goal to create an open, massive, mine-able database of data about health and genomics. One step is the Portable Legal Consent as a broad consent for the usage of data in research. Another step is the <a href="https://petitions.whitehouse.gov/petition/require-free-access-over-internet-scientific-journal-articles-arising-taxpayer-funded-research/wDX82FLQ">We the People petitition</a> lead by Wilbanks and signed by 65,000 people. February 2013 the US Government replied and announced a plan to open up taxpayer-funded research data and make it available for free.<a href="#fnref9">↩</a></p></li>
+<li id="fn10"><p><a href="http://www.oastories.org">http://www.oastories.org</a>: The site is provided by the initiative knowledge-exchange.info which is supported by Denmark’s Electronic Research Library (DEFF, Denmark), the German Research Foundation (DFG, Germany), the Joint Information Systems Committee (JISC; UK) und SURF (Netherlands).<a href="#fnref10">↩</a></p></li>
+<li id="fn11"><p>The article of C. Hayden (2012a) discusses the topic of commercial usage on the occasion of the first patent (a patented gen sequence) of the company 23andme.<a href="#fnref11">↩</a></p></li>
+<li id="fn12"><p>see § 3 (6) Federal Data Protection Act or corresponding federal state law<a href="#fnref12">↩</a></p></li>
+<li id="fn13"><p>ICD: International Classification of Diseases. It is a health care classification system that provides codes to classify diseases as well as a symptoms, abnormal findings, social circumstances and external causes for injury or disease. It is published by the World Health Organization and is used worldwide; amongst others for morbidity statistics and reimbursement systems.<a href="#fnref13">↩</a></p></li>
+<li id="fn14"><p>National Institutes of Health; USA<a href="#fnref14">↩</a></p></li>
+<li id="fn15"><p>See <a href="http://www.wired.com/threatlevel/2009/12/netflix-privacy-lawsuit">http://www.wired.com/threatlevel/2009/12/netflix-privacy-lawsuit</a> and <a href="http://www.wired.com/science/discoveries/news/2007/03/72963">http://www.wired.com/science/discoveries/news/2007/03/72963</a><a href="#fnref15">↩</a></p></li>
+<li id="fn16"><p>e.g. the MinION^TM device from Oxford Nanopore Technologies (<a href="http://www.nanoporetech.com">http://www.nanoporetech.com</a>). See also (Hayden 2012b)<a href="#fnref16">↩</a></p></li>
+<li id="fn17"><p>The data shown in Figure 1 and Figure 2 are provided by courtesy of Markus Graf (German Cancer Research Center).<a href="#fnref17">↩</a></p></li>
+<li id="fn18"><p>One example would be web API offered by face.com (<a href="http://en.wikipedia.org/wiki/Face.com">http://en.wikipedia.org/wiki/Face.com</a>).<a href="#fnref18">↩</a></p></li>
+<li id="fn19"><p>In order to print 3D-Models you can use services like <a href="http://www.shapeways.com">http://www.shapeways.com</a> or <a href="http://i.materialise.com">http://i.materialise.com</a>.<a href="#fnref19">↩</a></p></li>
+</ol></section>
+</body></html>
+
+
+            <div class="license">
+              
+                <hr>
+                <div class="toc-item">
+                  <h3>Next chapter: <a href="/cases_recipes_howtos/on_the_sociology_of_science_2_0.html">On the Sociology of Science 2.0</a></h3>
+                  <p>
+                    Vladimir B. Teif</p>
+                  
+                </div>
+              
+              
+            </div>
+
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'openingscience'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+          </div>
+        </div>
+
+        <!-- COinS metadata (for citation managers like Zotero etc), goes in body text -->
+<span
+  class="Z3988"
+  title="ctx_ver=Z39.88-2004
+  &amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc
+  &amp;rfr_id=info%3Asid%2Focoins.info%3Agenerator
+  &amp;rft.title=Challenges of Open Data in Medical Research
+  &amp;rft.creator=
+  &amp;rft.date=2013-08-22
+  &amp;rft.language=EN
+  &amp;rft.rights=CC0
+  &amp;rft_id=http://book.openingscience.org/cases_recipes_howtos/challenges_of_open_data_in_medical_research.html">
+</span>
+
+        <!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setCookieDomain", "*.www.openingscience.org"]);
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hiig.de/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "3"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/js/js-yaml.min.js"></script>
+
+    <!-- Fluidbox https://github.com/terrymun/Fluidbox -->
+    <script src="/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/js/jquery.fluidbox.min.js"></script>
+    <script type='text/javascript'>
+      $(function () {
+        $("a").fluidbox();
+      });
+    </script>
+
+    <!-- Bootstrap -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="/js/jasny-bootstrap.min.js"></script>
+
+    <!-- MathJax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </body>
+</html>

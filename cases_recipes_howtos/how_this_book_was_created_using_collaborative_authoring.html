@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <title>How this book was created using collaborative authoring and cloud tools</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Sönke Bartling" />
+    <meta name="keywords" content="" />
+
+    <!-- RDFa Metadata (in DublinCore) -->
+    <meta property="dc:title" content="How this book was created using collaborative authoring and cloud tools" />
+    <meta property="dc:creator" content="Sönke Bartling" />
+    <meta property="dc:format" content="text/html" />
+    <meta property="dc:language" content="en" />
+    <meta property="dc:identifier" content="/cases_recipes_howtos/how_this_book_was_created_using_collaborative_authoring.html" />
+    <meta property="dc:rights" content="CC-BY-NC" />
+    <meta property="dc:source" content="Opening Science" />
+    <meta property="dc:subject" content="Scholarly Communication" />
+    <meta property="dc:type" content="website" />
+
+    <!-- Google Scholar Metadata -->
+    <meta name="citation_author" content="Sönke Bartling"/>
+    <meta name="citation_title" content="How this book was created using collaborative authoring and cloud tools"/>
+    <meta name="citation_journal_title" content="Opening Science"/>
+
+    <link rel="alternate" type="application/rss+xml" title="Opening Science" href="/rss.xml" />
+    <link rel="alternate" type="application/atom+xml" title="Opening Science" href="/atom.xml" />
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/app-90174b04f571833875511d8c4181b385.css">
+    <link rel="stylesheet" href="/assets/jasny-bootstrap.min-858066d22662d38bbc0ba337e5dfdfbb.css">
+    <link rel="stylesheet" href="/assets/navmenu-push-9a65531d989d060d6e1c9046851a6a91.css">
+    <link rel="stylesheet" href="/assets/fluidbox-1e4d75d5984979bafa6c14619443b4d2.css">
+
+    <!-- d3.js -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.2/d3.min.js"></script>
+
+    <!-- Adobe Web Fonts -->
+    <script src="//use.edgefonts.net/rosario.js"></script>
+  </head>
+
+
+  <body>
+    <nav id="navmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas" role="navigation">
+  <a class="navmenu-brand" href="#">Opening Science - The Book</a>
+  <ul class="nav navmenu-nav">
+  
+    <li><span class="glyphicon glyphicon-folder-open"></span> Cases, Recipes & Howtos</li>
+  
+  
+    <li><span class="glyphicon glyphicon-calendar"></span> 19 January 2014</li>
+  
+  
+    <li><span class="glyphicon glyphicon-link"></span> <a href="http://dx.doi.org/10.1007/978-3-319-00026-8_24">doi: 10.1007/978-3-319-00026-8_24</a></li>
+  
+    <li><span class="glyphicon glyphicon-time"></span> <a href="http://github.com/openingscience/book/commits/master/_posts/2013-08-24-how_this_book_was_created_using_collaborative_authoring.md">Version History</a></li>
+    <li><span class="glyphicon glyphicon-edit"></span> <a href="http://prose.io/#openingscience/book/edit/master/_posts/2013-08-24-how_this_book_was_created_using_collaborative_authoring.md">Send Edit Request</a></li>
+    
+    <li><span class="glyphicon glyphicon-home"></span> <a href="/">Home</a></li>
+    <li><span class="glyphicon glyphicon-info-sign"></span> <a href="/about.html">About</a></li>
+    <li><span class="glyphicon glyphicon-tags"></span> <a href="/tags.html">All Tags</a></li>
+    <li><a href="http://creativecommons.org/licenses/by-nc/3.0/deed.en" class="logo"><img src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png"></a></li>
+  </ul>
+</nav>
+
+    <div class="navbar navbar-default navbar-fixed-top">
+      <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#navmenu" data-canvas="body">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="container">
+      <a href="https://github.com/openingscience/book"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://github-camo.global.ssl.fastly.net/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="page-header">
+            <h1>How this book was created using collaborative authoring and cloud tools</h1>
+            <p>Sönke Bartling</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<h2>Abstract</h2>
+  <p>This book about novel publishing and collaboration methods of scholarly knowledge was itself created using novel and collaborative authoring tools. Google Docs as a collaborative authoring and text editing tool and Dropbox as a cloud storage solution were used. Our experience was a positive one and we think that it saved us a lot of organisational emails and hundreds of work hours. Here we describe the workflow process in detail so that the interested author might benefit from what we learnt.</p>
+<div class="references">
+
+</div>
+
+<h2 id="how-this-book-was-created">How This Book was Created</h2>
+<p>The creation process can be divided in several phases in regard to the online tools which were used.</p>
+<p><strong>Phase I:</strong> Potential content was collected and authors were invited to participate. Shortly afterwards, a table in Google Docs was collaboratively maintained by both editors. For each chapter, the title and possible authors were discussed, emails to authors were sent, and feedback was added. Chapters were divided among both editors, so that one contact person was responsible for each chapter. In jour-fixe Skype sessions the status of the work in progress was discussed.</p>
+<figure><a href=""><img src="/images/how_this_book_was_created.jpg" alt="Figure 1. The table of contents was the central workplace for the editors in the early phase of this book project."></a><figcaption><strong>Figure 1</strong>. The table of contents was the central workplace for the editors in the early phase of this book project.</figcaption></figure><p><strong>Phase II:</strong> A table of contents was created as a text document in Google Docs. The returning abstracts were uploaded to Google Docs and the links were created to the abstracts. The table of contents file served as the central document (Figure 1).</p>
+<p><strong>Phase III:</strong> Returning articles were uploaded to Google Docs and the authors were invited to participate with ‘editing’ privileges. Articles were also linked to the TOC. Authors and editors worked iteratively on the Google documents. Commenting functionality was used to discuss points of controversy. Images were designed in Apple Keynote and the image files and other files were shared using Dropbox.</p>
+<figure><a href=""><img src="/images/how_this_book_was_created_2.jpg" alt="Figure 2. During the editing process of the chapters, the authors and editors changed the chapters with editing privileges, while all others authors were invited to comment - serving as a form of internal peer-review."></a><figcaption><strong>Figure 2</strong>. During the editing process of the chapters, the authors and editors changed the chapters with editing privileges, while all others authors were invited to comment - serving as a form of internal peer-review.</figcaption></figure><p><strong>Phase IV:</strong> An internal review started once almost final versions of the chapters existed. All authors received a TOC with links to every chapter - all authors possessed commenting privileges for all other chapters. Only the chapter authors and editors had the right to change the text. The internal references within the book were set in this phase and the consistency among the chapters was assured. Citations were added using the Harvard author-date style, omitting the necessity of changing in-text references if novel references were added. Since Google Docs lacks integration with a reference management system, Zotero was used to import the references from databases. The bibliographies for each chapter were generated from shared Zotero databases (one for each chapter) and manually inserted into the documents. URLs were included as footnotes.</p>
+<p><strong>Phase V:</strong> After reviewing changes and undertaking final proofreading, a finalized table of contents with embedded links was sent to the publisher.</p>
+<p><strong>Phase VI (now):</strong> The book is now available as Open Access printed book and its content can be downloaded from www.openingscience.org. Here the content can also be edited.</p>
+<div class="references">
+
+</div>
+</body></html>
+
+
+            <div class="license">
+              
+                <hr>
+                <div class="toc-item">
+                  <h3>Next chapter: <a href="/cases_recipes_howtos/history_2_0.html">History II.o</a></h3>
+                  <p>
+                    Luka Orešković</p>
+                  
+                </div>
+              
+              
+            </div>
+
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'openingscience'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+          </div>
+        </div>
+
+        <!-- COinS metadata (for citation managers like Zotero etc), goes in body text -->
+<span
+  class="Z3988"
+  title="ctx_ver=Z39.88-2004
+  &amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc
+  &amp;rfr_id=info%3Asid%2Focoins.info%3Agenerator
+  &amp;rft.title=How this book was created using collaborative authoring and cloud tools
+  &amp;rft.creator=
+  &amp;rft.date=2013-08-24
+  &amp;rft.language=EN
+  &amp;rft.rights=CC0
+  &amp;rft_id=http://book.openingscience.org/cases_recipes_howtos/how_this_book_was_created_using_collaborative_authoring.html">
+</span>
+
+        <!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setCookieDomain", "*.www.openingscience.org"]);
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hiig.de/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "3"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/js/js-yaml.min.js"></script>
+
+    <!-- Fluidbox https://github.com/terrymun/Fluidbox -->
+    <script src="/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/js/jquery.fluidbox.min.js"></script>
+    <script type='text/javascript'>
+      $(function () {
+        $("a").fluidbox();
+      });
+    </script>
+
+    <!-- Bootstrap -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="/js/jasny-bootstrap.min.js"></script>
+
+    <!-- MathJax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </body>
+</html>

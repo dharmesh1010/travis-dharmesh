@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <title>Making data citeable: DataCite</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Jan Brase" />
+    <meta name="keywords" content="persistent identifiers, research data" />
+
+    <!-- RDFa Metadata (in DublinCore) -->
+    <meta property="dc:title" content="Making data citeable: DataCite" />
+    <meta property="dc:creator" content="Jan Brase" />
+    <meta property="dc:format" content="text/html" />
+    <meta property="dc:language" content="en" />
+    <meta property="dc:identifier" content="/cases_recipes_howtos/making_data_citeable.html" />
+    <meta property="dc:rights" content="CC-BY-NC" />
+    <meta property="dc:source" content="Opening Science" />
+    <meta property="dc:subject" content="Scholarly Communication" />
+    <meta property="dc:type" content="website" />
+
+    <!-- Google Scholar Metadata -->
+    <meta name="citation_author" content="Jan Brase"/>
+    <meta name="citation_title" content="Making data citeable: DataCite"/>
+    <meta name="citation_journal_title" content="Opening Science"/>
+
+    <link rel="alternate" type="application/rss+xml" title="Opening Science" href="/rss.xml" />
+    <link rel="alternate" type="application/atom+xml" title="Opening Science" href="/atom.xml" />
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/app-90174b04f571833875511d8c4181b385.css">
+    <link rel="stylesheet" href="/assets/jasny-bootstrap.min-858066d22662d38bbc0ba337e5dfdfbb.css">
+    <link rel="stylesheet" href="/assets/navmenu-push-9a65531d989d060d6e1c9046851a6a91.css">
+    <link rel="stylesheet" href="/assets/fluidbox-1e4d75d5984979bafa6c14619443b4d2.css">
+
+    <!-- d3.js -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.2/d3.min.js"></script>
+
+    <!-- Adobe Web Fonts -->
+    <script src="//use.edgefonts.net/rosario.js"></script>
+  </head>
+
+
+  <body>
+    <nav id="navmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas" role="navigation">
+  <a class="navmenu-brand" href="#">Opening Science - The Book</a>
+  <ul class="nav navmenu-nav">
+  
+    <li><span class="glyphicon glyphicon-folder-open"></span> Cases, Recipes & Howtos</li>
+  
+  
+    <li><span class="glyphicon glyphicon-calendar"></span> 1 March 2014</li>
+  
+  
+    <li><span class="glyphicon glyphicon-link"></span> <a href="http://dx.doi.org/10.1007/978-3-319-00026-8_26">doi: 10.1007/978-3-319-00026-8_26</a></li>
+  
+    <li><span class="glyphicon glyphicon-time"></span> <a href="http://github.com/openingscience/book/commits/master/_posts/2013-08-26-making_data_citeable.md">Version History</a></li>
+    <li><span class="glyphicon glyphicon-edit"></span> <a href="http://prose.io/#openingscience/book/edit/master/_posts/2013-08-26-making_data_citeable.md">Send Edit Request</a></li>
+    
+    <li><span class="glyphicon glyphicon-tags"></span> Tags
+      <ul class="tag-list">
+        
+        
+  
+  	<li><a href="/tags.html#persistent identifiers-ref">persistent identifiers</a></li>
+  
+  	<li><a href="/tags.html#research data-ref">research data</a></li>
+  
+
+
+
+      </ul>
+    </li>
+    
+    <li><span class="glyphicon glyphicon-home"></span> <a href="/">Home</a></li>
+    <li><span class="glyphicon glyphicon-info-sign"></span> <a href="/about.html">About</a></li>
+    <li><span class="glyphicon glyphicon-tags"></span> <a href="/tags.html">All Tags</a></li>
+    <li><a href="http://creativecommons.org/licenses/by-nc/3.0/deed.en" class="logo"><img src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png"></a></li>
+  </ul>
+</nav>
+
+    <div class="navbar navbar-default navbar-fixed-top">
+      <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#navmenu" data-canvas="body">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="container">
+      <a href="https://github.com/openingscience/book"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://github-camo.global.ssl.fastly.net/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="page-header">
+            <h1>Making data citeable: DataCite</h1>
+            <p>Jan Brase</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<h2>Abstract</h2>
+  <p>In 2005 the German National Library of Science and Technology started assigning DOI names to datasets to allow stabile linking between articles and data. In 2009 this work lead to the funding of DataCite, a global consortium of libraries and information institutions with the aim to enable scientists to use datasets as independently published records that can be shared, referenced and cited.</p>
+<div class="references">
+
+</div>
+
+<p>Data integration with text is an important aspect of scientific collaboration. It allows verification of scientific results and joint research activities on various aspects of the same problem. Only a very small proportion of the original data is published in conventional scientific journals. Existing policies on data archiving notwithstanding, in today’s practice data are primarily stored in private files, not in secure institutional repositories, and effectively are lost to the public. This lack of access to scientific data is an obstacle to international research. It causes unnecessary duplication of research efforts, and the verification of results becomes difficult, if not impossible. Large amounts of research funds are spent every year to recreate already existing data.</p>
+<p>Handling datasets as persistently identified, independently published items is a key element for allowing citation and long term integration of datasets into text as well as supporting a variety of data management activities. It would be an incentive to the author if a data publication had the rank of a citeable publication, adding to their reputation and ranking among their peers.</p>
+<p>The German National Library of Science and Technology (TIB) developed and promotes the use of Digital Object Identifiers (DOI) for datasets. A DOI name is used to cite and link to electronic resources (text as well as research data and other types of content). The DOI System differs from other reference systems commonly used on the Internet, such as the URL, since it is permanently linked to the object itself, not just to the place in which the object is located. As a major advantage, the use of the DOI system for registration permits the scientists and the publishers to use the same syntax and technical infrastructure for the referencing of datasets that are already established for the referencing of articles. The DOI system offers persistent links as stable references to scientific content and an easy way to connect the article with the underlying data. For example:</p>
+<p>The dataset:</p>
+<p><strong>G.Yancheva, N. R. Nowaczyk et al</strong> (2007). Rock magnetism and X-ray flourescence spectrometry analyses on sediment cores of the Lake Huguang Maar, Southeast China, <em>PANGAEA</em> doi:<a href="http://dx.doi.org/10.1594/PANGAEA.587840">10.1594/PANGAEA.587840</a></p>
+<p>Is a supplement to the article:</p>
+<p><strong>G. Ycheva, N. R. Nowaczyk et al</strong> (2007). Influence of the intertropical convergence zone on the East Asian monsoon <em>Nature</em> 445, 74-77 doi:<a href="http://dx.doi.org/10.1038/nature05431">10.1038/nature05431</a></p>
+<p>Since 2005, TIB has been an official DOI Registration Agency with a focus on the registration of research data. The role of TIB is that of the actual DOI registration and the storage of the relevant metadata of the dataset. The research data themselves are not stored at TIB. The registration always takes place in cooperation with data centers or other trustworthy institutions that are responsible for quality assurance, storage and accessibility of the research data and the creation of metadata.</p>
+<p>Access to research data is nowadays defined as part of the national responsibilities and in recent years most national science organisations have addressed the need to increase the awareness of, and the accessibility to, research data.</p>
+<p>Nevertheless science itself is international; scientists are involved in global unions and projects, they share their scientific information with colleagues all over the world, they use national as well as foreign information providers.</p>
+<p>When facing the challenge of increasing access to research data, a possible approach should be global cooperation for data access via national representatives.</p>
+<ul>
+<li>a global cooperation, because scientist work globally, scientific data are created and accessed globally.</li>
+<li>with national representatives, because most scientists are embedded in their national funding structures and research organisations .</li>
+</ul>
+<p>The key point of this approach is the establishment of a Global DOI Registration agency for scientific content that will offer to all researchers dataset registration and cataloguing services. DataCite was officially launched on December 1st 2009 in London to offer worldwide DOI-registration of scientific data to actively offer scientists the possibility to publish their data as an independent citable object. Currently DataCite has 17 members from 12 countries:</p>
+<p>The German National Library of Science and Technology (TIB), the German National Library of Medicine (ZB MED), the German National Library of Economics (ZBW) and the German GESIS – Leibniz Institute for the Social Sciences.</p>
+<p>Additional European members are: The Library of the ETH Zürich in Switzerland, the Library of TU Delft, from the Netherlands, the L’Institut de l’Information Scientifique et Technique (INIST) from France, The technical Information Center of Denmark, The British Library, the Sedish National Data Service (SND), the Conferenza dei Rettori delle Università Italiane (CRUI) from Italy.</p>
+<p>North America is represented through: the California Digital Library, the Office of Scientific and Technical Information (OSTI), the Purdue University and the Canada Institute for Scientific and Technical Information (CISTI).</p>
+<p>Furthermore the Australian National Data Service (ANDS) and the National Research Council of Thailand (NRCT) are members.</p>
+<p>DataCite offers through its members DOI registration for data centers, currently over 1.7 million objects have been registered with a DOI name and are available through <a href="http://search.datacite.org/ui">a central search portal at DataCite</a>.</p>
+<p>Based on the DOI registration DataCite offers a variety of services such as a detailed <a href="http://stats.datacite.org">statistic portal</a> of the number of DOI names registered and resolved. In cooperation with CrossRef, the major DOI registration agency for scholarly articles a <a href="http://www.crosscite.org/cn">content negotiation service</a> has been established that allows persistent resolution of all DOI names directly to their metadata in XML or RDF format.</p>
+<p>In June 2012 DataCite and the <a href="http://stm-assoc.org">STM association</a> signed a <a href="http://www.datacite.org/node/65">joint statement</a> to encourage publishers and data centers to link articles and underlying data.</p>
+<div class="references">
+
+</div>
+</body></html>
+
+
+            <div class="license">
+              
+              
+            </div>
+
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'openingscience'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+          </div>
+        </div>
+
+        <!-- COinS metadata (for citation managers like Zotero etc), goes in body text -->
+<span
+  class="Z3988"
+  title="ctx_ver=Z39.88-2004
+  &amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc
+  &amp;rfr_id=info%3Asid%2Focoins.info%3Agenerator
+  &amp;rft.title=Making data citeable: DataCite
+  &amp;rft.creator=
+  &amp;rft.date=2013-08-26
+  &amp;rft.language=EN
+  &amp;rft.rights=CC0
+  &amp;rft_id=http://book.openingscience.org/cases_recipes_howtos/making_data_citeable.html">
+</span>
+
+        <!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setCookieDomain", "*.www.openingscience.org"]);
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hiig.de/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "3"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/js/js-yaml.min.js"></script>
+
+    <!-- Fluidbox https://github.com/terrymun/Fluidbox -->
+    <script src="/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/js/jquery.fluidbox.min.js"></script>
+    <script type='text/javascript'>
+      $(function () {
+        $("a").fluidbox();
+      });
+    </script>
+
+    <!-- Bootstrap -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="/js/jasny-bootstrap.min.js"></script>
+
+    <!-- MathJax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </body>
+</html>

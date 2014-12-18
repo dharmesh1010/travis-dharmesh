@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <title>Unique Identifiers for Researchers</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Martin Fenner" />
+    <meta name="author" content="Laure Haak" />
+    <meta name="keywords" content="persistent identifiers" />
+
+    <!-- RDFa Metadata (in DublinCore) -->
+    <meta property="dc:title" content="Unique Identifiers for Researchers" />
+    <meta property="dc:creator" content="Martin Fenner" />
+    <meta property="dc:creator" content="Laure Haak" />
+    <meta property="dc:format" content="text/html" />
+    <meta property="dc:language" content="en" />
+    <meta property="dc:identifier" content="/cases_recipes_howtos/unique_identifiers_for_researchers.html" />
+    <meta property="dc:rights" content="CC-BY-NC" />
+    <meta property="dc:source" content="Opening Science" />
+    <meta property="dc:subject" content="Scholarly Communication" />
+    <meta property="dc:type" content="website" />
+
+    <!-- Google Scholar Metadata -->
+    <meta name="citation_author" content="Martin Fenner"/>
+    <meta name="citation_author" content="Laure Haak"/>
+    <meta name="citation_title" content="Unique Identifiers for Researchers"/>
+    <meta name="citation_journal_title" content="Opening Science"/>
+
+    <link rel="alternate" type="application/rss+xml" title="Opening Science" href="/rss.xml" />
+    <link rel="alternate" type="application/atom+xml" title="Opening Science" href="/atom.xml" />
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/app-90174b04f571833875511d8c4181b385.css">
+    <link rel="stylesheet" href="/assets/jasny-bootstrap.min-858066d22662d38bbc0ba337e5dfdfbb.css">
+    <link rel="stylesheet" href="/assets/navmenu-push-9a65531d989d060d6e1c9046851a6a91.css">
+    <link rel="stylesheet" href="/assets/fluidbox-1e4d75d5984979bafa6c14619443b4d2.css">
+
+    <!-- d3.js -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.2/d3.min.js"></script>
+
+    <!-- Adobe Web Fonts -->
+    <script src="//use.edgefonts.net/rosario.js"></script>
+  </head>
+
+
+  <body>
+    <nav id="navmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas" role="navigation">
+  <a class="navmenu-brand" href="#">Opening Science - The Book</a>
+  <ul class="nav navmenu-nav">
+  
+    <li><span class="glyphicon glyphicon-folder-open"></span> Cases, Recipes & Howtos</li>
+  
+  
+    <li><span class="glyphicon glyphicon-calendar"></span> 15 February 2014</li>
+  
+  
+    <li><span class="glyphicon glyphicon-link"></span> <a href="http://dx.doi.org/10.1007/978-3-319-00026-8_21">doi: 10.1007/978-3-319-00026-8_21</a></li>
+  
+    <li><span class="glyphicon glyphicon-time"></span> <a href="http://github.com/openingscience/book/commits/master/_posts/2013-08-21-unique_identifiers_for_researchers.md">Version History</a></li>
+    <li><span class="glyphicon glyphicon-edit"></span> <a href="http://prose.io/#openingscience/book/edit/master/_posts/2013-08-21-unique_identifiers_for_researchers.md">Send Edit Request</a></li>
+    
+    <li><span class="glyphicon glyphicon-tags"></span> Tags
+      <ul class="tag-list">
+        
+        
+  
+  	<li><a href="/tags.html#persistent identifiers-ref">persistent identifiers</a></li>
+  
+
+
+
+      </ul>
+    </li>
+    
+    <li><span class="glyphicon glyphicon-home"></span> <a href="/">Home</a></li>
+    <li><span class="glyphicon glyphicon-info-sign"></span> <a href="/about.html">About</a></li>
+    <li><span class="glyphicon glyphicon-tags"></span> <a href="/tags.html">All Tags</a></li>
+    <li><a href="http://creativecommons.org/licenses/by-nc/3.0/deed.en" class="logo"><img src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png"></a></li>
+  </ul>
+</nav>
+
+    <div class="navbar navbar-default navbar-fixed-top">
+      <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#navmenu" data-canvas="body">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="container">
+      <a href="https://github.com/openingscience/book"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://github-camo.global.ssl.fastly.net/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="page-header">
+            <h1>Unique Identifiers for Researchers</h1>
+            <p>Martin Fenner & Laure Haak</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<h2 id="the-problem">The Problem</h2>
+<p>Two large challenges that researchers face today are discovery and evaluation. We are overwhelmed by the volume of new research works, and traditional discovery tools are no longer sufficient. We are spending considerable amounts of time optimizing the impact – and discoverability – of our research work so as to support grant applications and promotions, and the traditional measures for this are not enough.</p>
+<p>Research is increasingly global and many interactions do not happen at a personal level anymore, but rather through online tools, from email to videoconferencing and online databases. Researchers have traditionally been identified by their names, but this has never worked reliably because of confusions between popular names (John Smith or Kim Lee), errors in transliteration (e.g. Müller becomes Mueller or Muller), and name changes through marriage. These name issues present an even greater challenge when we try to find out more about researchers who we do not know personally, for example an author of a paper we find interesting or an interesting speaker at a conference, or about the research going on in an institution where we have applied for a job.</p>
+<h2 id="unique-identifiers-as-a-solution">Unique Identifiers as a Solution</h2>
+<p>The only way to uniquely identify a researcher is through an identifier rather than a name. We, of course, use unique identifiers already with usernames for email, social media accounts, institutional accounts, and more. What is missing is a standard unique researcher identifier that is widely used by academic institutions, funders, publishers, and online tools and services for researchers, which is embedded in research workflows and that automates the process of connecting researchers and their research. The existing researcher identifier services and social networks for scientists do not fill that gap. Many of the existing solutions are limited to a geographic region or discipline, many researchers and institutions are reluctant to use a commercial service, and some of the open solutions do not have the wide support from the community needed to reach critical mass.</p>
+<p><a href="http://orcid.org">Open Researcher &amp; Contributor ID (ORCID)</a> is an international, interdisciplinary, open and not-for-profit organization created to solve the researcher name ambiguity problem for the benefit of all stakeholders. ORCID was built with the goal of becoming the universally accepted unique identifier for researchers:</p>
+<ol type="1">
+<li>ORCID is a community-driven organization</li>
+<li>ORCID is not limited by discipline, institution, or geography</li>
+<li>ORCID is an inclusive and transparently governed not-for profit organization</li>
+<li>ORCID data and source code are available under recognized open licenses</li>
+<li>the ORCID iD is part of institutional, publisher, and funding agency infrastructures</li>
+</ol>
+<p>Furthermore, ORCID recognizes that existing researcher and identifier schemes serve specific communities, and is working to link with, rather than replace, existing infrastructures. One example is <a href="http://www.isni.org/">ISNI</a>, the International Standard Name Identifier. ORCID is <a href="http://orcid.org/blog/2013/04/22/orcid-and-isni-issue-joint-statement-interoperation-april-2013">working closely</a> with ISNI and has for example <a href="http://isni2orcid.labs.orcid-eu.org/">launched a web service</a> in early 2014 that allows researchers to link their ISNI and ORCID identifiers.</p>
+<h2 id="orcid-registry">ORCID Registry</h2>
+<p>The ORCID Registry launched in October 2012, and as of February 2013 more than 60,000 researchers have registered. Use of the Registry is free: individuals may create, edit, and share their ORCID record. ORCID staff, infrastructure, and software development is supported by member fees for organizations embedding the iD into systems.</p>
+<figure><a href=""><img src="/images/orcid.png" alt="Figure 1. Example ORCID Profile."></a><figcaption><strong>Figure 1</strong>. Example ORCID Profile.</figcaption></figure><p>Many organizations have started to integrate ORCID identifiers into their infrastructure. In early 2013, this includes manuscript submission systems from several publishers (Nature Publishing Group, Copernicus, Hindawi, and others), linkage with other identifier schemes (Scopus, ResearcherID, Faculty of 1000), and integration with research works databases such as CrossRef and Figshare. The first services building on top of the Registry have also emerged, including altmetrics (see chapter 12, Fenner: Altmetrics and Other Novel Measures for Scientific Impact) tools to track the impact of all research outputs linked to a particular ORCID identifier.</p>
+<h2 id="outlook">Outlook</h2>
+<p>One of the stated goals of the ORCID initiative is to facilitate linkage with all research outputs: papers, monographs, books, datasets, software, peer review, clinical trials, patents, grants, etc. By providing a switchboard for this information, ORCID can help raise awareness of – and credit for – important research and scholarly activities and help the research community develop tools and metrics to better understand and evaluate impact. By embedding the ORCID iD in research workflows, ORCID can also help to reduce the time researchers spend on administrative and reporting activities, including publication lists for institutions and funders, submissions to the institutional repository, and more. Unique identifiers for researchers and research outputs can automate much of this reporting, giving researchers more time to do actual research. Widespread adoption of unique researcher identifiers will foster the development of exciting new tools and services for researchers which will make science more collaborative, productive, and interesting.</p>
+<div class="references">
+
+</div>
+</body></html>
+
+
+            <div class="license">
+              
+                <hr>
+                <div class="toc-item">
+                  <h3>Next chapter: <a href="/cases_recipes_howtos/challenges_of_open_data_in_medical_research.html">Challenges of Open Data in Medical Research</a></h3>
+                  <p>
+                    Ralf Floca</p>
+                  
+                </div>
+              
+              
+            </div>
+
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'openingscience'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+          </div>
+        </div>
+
+        <!-- COinS metadata (for citation managers like Zotero etc), goes in body text -->
+<span
+  class="Z3988"
+  title="ctx_ver=Z39.88-2004
+  &amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc
+  &amp;rfr_id=info%3Asid%2Focoins.info%3Agenerator
+  &amp;rft.title=Unique Identifiers for Researchers
+  &amp;rft.creator=
+  &amp;rft.date=2013-08-21
+  &amp;rft.language=EN
+  &amp;rft.rights=CC0
+  &amp;rft_id=http://book.openingscience.org/cases_recipes_howtos/unique_identifiers_for_researchers.html">
+</span>
+
+        <!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setCookieDomain", "*.www.openingscience.org"]);
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hiig.de/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "3"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/js/js-yaml.min.js"></script>
+
+    <!-- Fluidbox https://github.com/terrymun/Fluidbox -->
+    <script src="/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/js/jquery.fluidbox.min.js"></script>
+    <script type='text/javascript'>
+      $(function () {
+        $("a").fluidbox();
+      });
+    </script>
+
+    <!-- Bootstrap -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="/js/jasny-bootstrap.min.js"></script>
+
+    <!-- MathJax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </body>
+</html>
