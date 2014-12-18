@@ -200,7 +200,7 @@ namespace :site do
     # Configure git if this is run in Travis CI
     if ENV["TRAVIS"]
       sh "git config --global user.name 'Dharmesh'"
-      sh "git config --global user.email 'dharmesh.adiance@gmail.cok'"
+      sh "git config --global user.email 'dharmesh.adiance@gmail.com'" 
       sh "git config --global push.default simple"
     end
 
