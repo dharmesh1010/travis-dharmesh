@@ -22,7 +22,7 @@ if REPO == "#{USERNAME}.github.io"
   DESTINATION_BRANCH = "master"
 else
   SOURCE_BRANCH = "master"
-  DESTINATION_BRANCH = "gh-pages"
+  DESTINATION_BRANCH = "../travis"
 end
 
 #############################################################################
