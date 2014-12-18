@@ -22,7 +22,7 @@ if REPO == "#{USERNAME}.github.io"
   DESTINATION_BRANCH = "master"
 else
   SOURCE_BRANCH = "master"
-  DESTINATION_BRANCH = "../travis"
+  DESTINATION_BRANCH = "travis"
 end
 
 #############################################################################
