@@ -12,7 +12,7 @@ destination: ../travis/
 # repo defaults to USERNAME.github.io
 # Branch defaults to "source" for USERNAME.github.io
 # or "master" otherwise
-username: dharmesh1010
+username: dharmesh.adiance@gmail.com
 repo: travis-dharmesh
 branch: master
 
